@@ -1,10 +1,14 @@
-1 odd
-2 even
-3 odd
-4 even
-5 odd
-6 even
-7 odd
-8 even
-9 odd
-10 even
+1
+2
+3
+4
+break and create new loop
+1
+2
+3
+4
+5
+7
+8
+9
+10
