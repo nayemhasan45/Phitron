@@ -2,17 +2,15 @@
 #include <stdlib.h>
 int main()
 {
-    int n,sum=0;
-    scanf("%d",&n);
-    int arr[n];
+    long long int n,sum=0;
+    scanf("%lld",&n);
+    long long int arr[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%lld",&arr[i]);
         sum+=arr[i];
     }
-    int pos = abs(sum);
-    printf("%d",pos);
-    
-    
+    long long int pos = abs(sum);
+    printf("%lld",pos);
     return 0;
 }
