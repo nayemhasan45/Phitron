@@ -3,7 +3,13 @@
 int main()
 {
     char ar[22];
-    gets(ar);
+    //using gets
+    // gets(ar);
+    //using fgets
+
+    fgets(ar,23,stdin);
     printf("%s",ar);
+
+
     return 0;
 }
