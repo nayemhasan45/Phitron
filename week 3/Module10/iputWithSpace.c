@@ -3,16 +3,16 @@
 int main()
 {
     char ar[100];
-    scanf("%s",ar);
+    // scanf("%s",ar);
     //using gets
     // gets(ar);
     //using fgets
 
-    // fgets(ar,23,stdin);
-
+    fgets(ar,23,stdin);
+    printf("%s",ar);
     // get string lenth
-    int len= strlen(ar);
-    printf("%d",len);
+    // int len= strlen(ar);
+    // printf("%d",len);
 
 
     return 0;
