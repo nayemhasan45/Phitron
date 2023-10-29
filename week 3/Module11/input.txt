@@ -1,2 +1,1 @@
-apple orange
-mango banana
+abcd adef
