@@ -9,7 +9,7 @@ int main()
         char ar[103];
         scanf("%s",&ar);
         int len =strlen(ar);
-        if (len<10)
+        if (len<=10)
         {
             printf("%s\n",ar);
         }else if (len>10)
