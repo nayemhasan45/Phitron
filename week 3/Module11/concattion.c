@@ -16,6 +16,7 @@ int main()
 
     strcat(n,m);
     printf("%s %s",n,m);
+    printf("hello");
     
     return 0;
 }
