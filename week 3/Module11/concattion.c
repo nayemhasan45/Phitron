@@ -12,6 +12,10 @@ int main()
         len++;
     }
     printf("%s %s",n,m);
+    //same thing with function
+
+    strcat(n,m);
+    printf("%s %s",n,m);
     
     return 0;
 }
