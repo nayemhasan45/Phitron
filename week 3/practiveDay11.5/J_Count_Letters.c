@@ -7,9 +7,9 @@ int main()
     {
         cnt[c-'a']++;
     }
-    for (char i = 'a'; i < 'z'; i++)
+    for (char i = 'a'; i <= 'z'; i++)
     {
-        if (cnt[i-'a']>0)
+        if (cnt[i-'a']!=0)
         {
             printf("%c : %d\n",i,cnt[i-'a']);
         }
