@@ -1,5 +1,2 @@
-address of x - 0061FF1C
-value of ptr - 0061FF1C
-adress of ptr - 0061FF18
-15
-ptr value -15
+x er value from fun -100
+x er value form main - 200
