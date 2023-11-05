@@ -1,2 +1,1 @@
-x er value from fun -100
-x er value form main - 200
+50
