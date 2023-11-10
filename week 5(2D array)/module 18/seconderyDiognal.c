@@ -16,7 +16,7 @@ int main()
         for (int i = 0; i < r; i++)
         {
             for(int j=0;j<c;j++){
-                if (i==j)
+                if (i+j==r-1)
                 {
                     continue;
                 }
@@ -37,10 +37,10 @@ int main()
     
     if (flag)
     {
-        printf("primary diognal matrix");
+        printf("secondery diognal matrix");
     }else
     {
-        printf("not diognal matrix");
+        printf("not secondery diognal matrix");
     }
     
     
