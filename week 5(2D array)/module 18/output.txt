@@ -1,1 +1,1 @@
-secondery diognal matrix
+scalar matrix
