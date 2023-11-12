@@ -1,8 +1,8 @@
 #include<stdio.h>
-int sum(int arr[],int n,int i){
+long long int sum(int arr[],int n,int i){
     if(i==n)return 0;
-    int s=sum(arr,n,i+1);
-    return s+arr[i];
+    long long int s=sum(arr,n,i+1);
+    return s+=arr[i];
 }
 int main()
 {
@@ -13,8 +13,8 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int total=sum(arr,n,0);
-    printf("%d",total);
+    long long int total=sum(arr,n,0);
+    printf("%lld",total);
     
     return 0;
 }
