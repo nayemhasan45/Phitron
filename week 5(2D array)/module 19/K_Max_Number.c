@@ -24,7 +24,5 @@ int main()
         scanf("%d",&arr[i],0);
     }
     printf("%d",findMax(arr,n,0));
-    // findMax(arr,n);
-
     return 0;
 }
