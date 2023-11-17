@@ -19,10 +19,14 @@ int main()
             if(arr[i][j]==x){
                 flag=1;
                 break;
+            }else
+            {
+                flag=0;
             }
+            
         }
     }
-    if (flag==1)
+    if (flag)
     {
         printf("will not take number");
     }else
