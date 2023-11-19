@@ -12,13 +12,12 @@ class Student{
         }
 };
 Student* callStuden(){
-    Student* hamza =  new Student(3,4,5.66);
+    Student* hamza =  new Student(3,66,5.66);
     return hamza;
 }
 int main (){
     Student* ans = callStuden();
     cout<<ans->roll<<" "<<ans->cls<<" "<<ans->gpa<<endl;
     delete ans;
-    // cout<<ans->roll<<" "<<ans->cls<<" "<<ans->gpa<<endl;
     return 0;
 }
