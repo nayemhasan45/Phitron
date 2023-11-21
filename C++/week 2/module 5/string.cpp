@@ -9,8 +9,8 @@ int main (){
     cout<<s<<endl;
     cout<<s.size()<<"\n";
     string s2;
-    // cout<<s2.capacity()<<endl;
-    // s.clear();
+    cout<<s2.capacity()<<endl;
+    s.clear();
     if (s.empty())
     {
         cout<<"empty"<<endl;
