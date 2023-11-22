@@ -1,7 +1,5 @@
-h
-e
-l
-l
-o
-B
-B
+BB
+from
+am
+i
+hello
