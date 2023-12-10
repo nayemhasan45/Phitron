@@ -39,12 +39,19 @@ void printLinklist(Node*head){
 void insertAtAnyPos(Node*&head,int v,int pos){
     Node*newNode= new Node(v);
     Node*tem=head;
-    for (int i = 1; i <pos-1; i++)
+    if(pos==0){
+        newNode->next=head;
+        head=newNode;
+    }else
     {
-        tem=tem->next;
+        for (int i = 1; i <pos-1; i++)
+        {
+            tem=tem->next;
+        }
+        newNode->next=tem->next;
+        tem->next=newNode;
     }
-    newNode->next=tem->next;
-    tem->next=newNode;
+    
 }
 int main (){
     Node*head=NULL;
