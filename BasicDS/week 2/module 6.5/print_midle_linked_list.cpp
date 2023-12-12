@@ -32,14 +32,27 @@ void printList(Node*head){
         cnt++;
         tem=tem->next;
     }
-    cout<<cnt-1;
+    cnt=cnt-1;
+    tem=head;
+    if(cnt%2==0){
+        for (int i = 0; i < (cnt/2)-1; i++)
+        {
+            tem=tem->next;
+        }
+        cout<<tem->val<<" "<<tem->next->val;
+    }else
+    {
+        for (int i = 0; i < cnt/2; i++)
+        {
+            tem=tem->next;
+        }
+        cout<<tem->val;
+    }
 }
 int main (){
     Node*head=NULL;
     while (true)
-    {
-        cout<<"enter the values : ";
-        int v;
+    {   int v;
         cin>>v;
         if(v==-1){
             break;
