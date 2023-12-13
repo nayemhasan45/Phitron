@@ -9,35 +9,29 @@ class Node{
                 this->next=NULL;
             }
 };
-void addLinkList(Node*&head,Node*&tail,int v){
+void insertNode(Node*&head,Node*&tail,int v){
     Node*newNode=new Node(v);
-    Node*tem=head;
-    if(tem==NULL){
+    if(head==NULL){
         head=newNode;
         tail=newNode;
-    }else{
+    }else
+    {
         tail->next=newNode;
         tail=newNode;
     }
 }
-void printLinkedList(Node*head){
+void printlist(Node*head){
     Node*tem=head;
-    if (tem==NULL)
-    {
-        return;
-    }
-    printLinkedList(tem->next);
-    cout<<tem->val<<" ";
-}
-int llSize(Node*head){
-    Node*tem=head;
-    int cnt=0;
+    int val = INT_MIN;
     while (tem!=NULL)
     {
-        cnt++;
+        // cout<<tem->val<<" ";
+        if(val<tem->val){
+            val=tem->val;
+        }
         tem=tem->next;
     }
-    return cnt;
+    cout<<val<<endl;
 }
 int main (){
     Node*head=NULL;
@@ -50,9 +44,9 @@ int main (){
             break;
         }else
         {
-            addLinkList(head,tail,v);
+            insertNode(head,tail,v);
         }
-    }   
-    printLinkedList(head); 
+    }
+    printlist(head);
     return 0;
 }
