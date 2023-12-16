@@ -29,20 +29,22 @@ void printNodeReverse(Node*tail){
     }
     cout<<endl;
 }
-void insertAtHead(Node*&head,Node*&tail,int v){
+void insertAtTail(Node*&tail,Node*&head,int v){
     Node*newNode=new Node(v);
+    Node*tem=head;
     if (head==NULL)
     {
         head=newNode;
         tail=newNode;
     }else
     {
-        newNode->next=head;
-        head->prev=newNode;
-        head=newNode;
+        newNode->prev=tail;
+        tail->next=newNode;
+        tail=tail->next;
     }
+    
+    
 }
-
 int main (){
     Node*head=new Node(10);
     Node*a=new Node(20);
@@ -52,8 +54,8 @@ int main (){
     a->prev=head;
     a->next=b;
     b->prev=a;
-    insertAtHead(head,tail,100);
-    insertAtHead(head,tail,200);
+    insertAtTail(tail,head,40);
+    insertAtTail(tail,head,50);
     printNode(head);
     printNodeReverse(tail);
     return 0;
