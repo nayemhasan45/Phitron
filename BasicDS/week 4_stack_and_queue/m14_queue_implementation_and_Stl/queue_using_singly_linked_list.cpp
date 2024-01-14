@@ -55,6 +55,7 @@ int main (){
         cin>>x;
         q.push(x);
     }
+    cout<<q.size()<<endl;
     while (!q.empty())
     {
         cout<<q.front()<<endl;
