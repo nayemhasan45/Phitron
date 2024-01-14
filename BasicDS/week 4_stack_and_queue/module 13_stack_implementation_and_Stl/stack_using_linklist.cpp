@@ -22,6 +22,7 @@ public:
         if(head==NULL){
             head=newNode;
             tail=newNode;
+            return;
         }
         newNode->prev=tail;
         tail->next=newNode;
