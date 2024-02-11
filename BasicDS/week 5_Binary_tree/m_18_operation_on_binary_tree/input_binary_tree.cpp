@@ -27,6 +27,7 @@ Node* takeInput(){
         Node*f=q.front();
         q.pop();
         int l,r;
+        cin>>l>>r;
         Node*myleft,*myright;
         if(l==-1){
             myleft=NULL;
